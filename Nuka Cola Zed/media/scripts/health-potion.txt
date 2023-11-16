@@ -1,0 +1,48 @@
+module NUZ
+{
+    imports    
+    {
+        Base
+    }
+
+    item NukaColaZed
+    {
+        HungerChange       = -1,
+        Weight              = 0.2,
+        AlwaysWelcomeGift   = TRUE,
+        Type                = Food,
+        UnhappyChange       = -10,
+        ThirstChange        = -25,
+        DisplayName         = Nuka Cola Zed,
+        DisplayCategory     = Food,
+        ReplaceOnUse        = NukaColaZed_Empty,
+        OnEat               = OnDrink_HealthPotion,
+        Icon                = NukaColaZed,
+        CustomContextMenu   = Drink,
+        CustomEatSound      = nuka-drink-sound,
+        Carbohydrates       = 10,
+        Proteins            = 1,
+        Lipids              = 1,
+        Calories            = 20,
+        Alcoholic           = true,
+        AlcoholPower        = 2,
+        BoredomChange       = -10,
+        UnhappyChange       = -10,
+        StressChange        = -10,
+        Packaged            = TRUE,
+        CantBeFrozen        = TRUE,
+        StaticModel         = PopBottle,
+        EatType             = popcan,
+    }
+
+    item NukaColaZed_Empty
+    {
+        Weight              = 0.1,
+        CanStoreWater       = TRUE,
+        Type                = Normal,
+        DisplayName         = Empty Nuka Cola Zed Bottle,
+        ReplaceOnUseOn      = WaterSource-WaterPopBottle,
+        Icon                = NukaColaZed_Empty,
+        MetalValue          = 10,
+    }
+}

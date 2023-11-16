@@ -1,0 +1,47 @@
+module NUQ
+{
+    imports    
+    {
+		Base
+	}
+
+    item NukaColaQuantum
+	{
+		HungerChange	    =	-40,
+		Weight      	    =	0.1,
+		AlwaysWelcomeGift	=	TRUE,
+		Type	            =	Food,
+		UnhappyChange	    =	-40,
+		ThirstChange	    =	-200,
+		DisplayName	        =	Nuka Cola Quantum,
+		DisplayCategory     = 	Food,
+		Icon	            =	NukaColaQuantum,
+		CustomContextMenu   =   Drink,
+		CustomEatSound      =   nuka-drink-sound,
+        Carbohydrates       =   100,
+        ReplaceOnUse        =   NukaColaQuantum_Empty,
+        Proteins            =   100,
+        Lipids              =   100,
+        Calories            =   400,
+		BoredomChange       = 	-40,
+        StressChange        = 	-40,
+        Packaged            =   TRUE,
+        CantBeFrozen        =   TRUE,
+        StaticModel         =   PopBottle,
+        EatType             =   popcan,
+	}
+
+	item NukaColaQuantum_Empty
+	{
+		Weight				=	0.1,
+		CanStoreWater		=	TRUE,
+		Type				=	Normal,
+		DisplayName			=	Empty Nuka Cola Quantum Bottle,
+		ReplaceOnUseOn		=	WaterSource-WaterPopBottle,
+		Icon				=	NukaColaQuantum_Empty,
+		MetalValue 			= 	50,
+	}
+}
+
+
+	
