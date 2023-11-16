@@ -1,0 +1,47 @@
+module NUK
+{
+    imports    
+    {
+		Base
+	}
+
+    item NukaCola
+	{
+		HungerChange	    =	-20,
+		Weight      	    =	0.2,
+		AlwaysWelcomeGift	=	TRUE,
+		Type	            =	Food,
+		ThirstChange	    =	-100,
+		DisplayName	        =	Nuka Cola,
+		DisplayCategory     = 	Food,
+		Icon	            =	NukaCola,
+		CustomContextMenu   =   Drink,
+		CustomEatSound      =   nuka-drink-sound,
+        Carbohydrates       =   66,
+        ReplaceOnUse        =   NukaCola_Empty,
+        Proteins            =   33,
+        Lipids              =   33,
+        Calories            =   200,
+		BoredomChange       = 	-20,
+        UnhappyChange       = 	-20,
+		StressChange        = 	-10,
+        Packaged            =   TRUE,
+        CantBeFrozen        =   TRUE,
+        StaticModel         =   PopBottle,
+        EatType             =   popcan,
+	}
+
+	item NukaCola_Empty
+	{
+		Weight				=	0.1,
+		CanStoreWater		=	TRUE,
+		Type				=	Normal,
+		DisplayName			=	Empty Nuka Cola Bottle,
+		ReplaceOnUseOn		=	WaterSource-WaterPopBottle,
+		Icon				=	NukaCola_Empty,
+		MetalValue 			= 	10,
+	}
+}
+
+
+	
